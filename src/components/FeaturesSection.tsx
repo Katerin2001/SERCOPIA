@@ -31,7 +31,7 @@ const FeaturesSection = () => {
     </div>
     <div className="text-center">
       <h3 className="text-lg font-bold text-gray-800 mb-2">Administrar Agentes</h3>
-      <p className="text-sm text-gray-600 leading-relaxed text-justify">
+      <p className="text-sm flex  text-gray-600 leading-relaxed text-justify">
   Asistentes virtuales que entienden tu negocio como tú mismo.  
   Crea agentes personalizados que se convierten en extensiones de tu experiencia profesional. Cada agente aprende exactamente a qué te dedicas, analiza miles de documentos y encuentra solo las oportunidades que realmente encajan con tus capacidades.  
   A diferencia de búsquedas genéricas, tus agentes conocen tus fortalezas específicas, eliminando las falsas oportunidades y destacando contratos donde tu propuesta tendría ventaja. Crea múltiples agentes especializados para cada área de tu negocio y multiplica tus posibilidades de éxito.  

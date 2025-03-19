@@ -7,7 +7,7 @@ const MissionCard = () => {
         Nuestra Misión
       </h2>
       
-      <div className="space-y-4 text-lg text-gray-800 leading-relaxed">
+      <div className="space-y-4 text-lg text-gray-800 leading-relaxed flex">
         <p className="text-black text-base">
           En Fonles Studios Corp., nuestra misión es transformar el acceso y el uso de la información 
           en herramientas que potencien el crecimiento personal y profesional. Creemos en un mundo 

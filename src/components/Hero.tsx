@@ -19,7 +19,7 @@ const Hero = () => {
 
       {/* Contenido principal */}
       <div className="w-full relative z-10 py-16 px-20">
-        <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 ">
+        <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-8">
           {/* Contenido del lado izquierdo */}
           <div className="w-full md:w-1/2 flex flex-col items-center md:items-center">
             <div className="relative w-[150px] h-[150px] self-center -ml-8">
@@ -58,7 +58,7 @@ const Hero = () => {
 
           {/* Logo del lado derecho */}
           <div className="w-full md:w-1/2 flex justify-end items-center">
-            <div className="relative w-[600px] h-[600px] -ml-90">
+            <div className="relative w-[600px] h-[600px] -ml-1">
               <Image
                 src="/img2.png"
                 alt="Sercopia Logo"
