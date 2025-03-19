@@ -5,7 +5,7 @@ import PricingSection from '@/components/PricingSection';
 import Testimonials from '@/components/Testimonials';
 
 import dynamic from "next/dynamic";
-const TestPage = dynamic(() => import("../content/docs/test.mdx"));
+{/*const TestPage = dynamic(() => import("../content/docs/test.mdx"));*/}
 
 export default function HomePage() {
   return (
@@ -15,7 +15,7 @@ export default function HomePage() {
       <FeaturesSection />
       <Testimonials />
       <PricingSection />
-      <TestPage />
+      
     </main>
   );
 }
