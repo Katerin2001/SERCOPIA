@@ -58,7 +58,7 @@ const Hero = () => {
 
           {/* Logo del lado derecho */}
           <div className="w-full md:w-1/2 flex justify-end items-center">
-            <div className="relative w-[600px] h-[600px] -ml-1">
+            <div className="relative w-[600px] h-[600px] ">
               <Image
                 src="/img2.png"
                 alt="Sercopia Logo"
