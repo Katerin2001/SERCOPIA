@@ -57,17 +57,16 @@ const Hero = () => {
 
 
           {/* Logo del lado derecho */}
-          <div className="w-full md:w-1/2 flex justify-end items-center">
-            <div className="relative w-[600px] h-[600px] ">
-              <Image
-                src="/img2.png"
-                alt="Sercopia Logo"
-                fill
-                priority
-                className="object-left "
-              />
-            </div>
-          </div>
+          <div className="relative w-full max-w-[600px] h-[600px] md:h-[500px] sm:h-[400px] xs:h-[300px]">
+  <Image
+    src="/img2.png"
+    alt="Sercopia Logo"
+    fill
+    priority
+    sizes="(max-width: 640px) 50vw, (max-width: 768px) 75vw, 100vw"
+    className="object-contain"
+  />
+</div>
         </div>
       </div>
     </div>
