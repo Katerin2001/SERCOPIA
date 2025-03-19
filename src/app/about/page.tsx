@@ -4,6 +4,15 @@ import Image from 'next/image';
 import MissionCard from '@/components/MissionCard';
 import DirectiveTeam from '@/components/DirectiveTeam';
 import Footer from '@/components/Footer';
+const components = {
+  Cards: (props) => <div className="cards">{props.children}</div>,
+  Card: ({ title, href }) => (
+    <a href={href} className="block p-4 border rounded shadow-md">
+      {title}
+    </a>
+  ),
+};
+
 
 export default function AboutPage() {
   return (

@@ -1,10 +1,25 @@
-import { createMDX } from 'fumadocs-mdx/next';
+import withMDX from "@next/mdx";
 
-const withMDX = createMDX();
+const nextConfig = withMDX({
+  extension: /\.mdx?$/,
+})({
+  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  webpack(config, options) {
+    config.module.rules.push({
+      test: /\.mdx$/,
+      use: [
+        options.defaultLoaders.babel,
+        {
+          loader: "@mdx-js/loader",
+          options: {
+            providerImportSource: "@mdx-js/react",
+          },
+        },
+      ],
+    });
 
-/** @type {import('next').NextConfig} */
-const config = {
-  reactStrictMode: true,
-};
+    return config;
+  },
+});
 
-export default withMDX(config);
+export default nextConfig;

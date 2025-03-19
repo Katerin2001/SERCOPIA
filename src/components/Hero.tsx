@@ -7,7 +7,8 @@ const Hero = () => {
   return (
     <div id="hero" className="relative min-h-[6px] flex items-center justify-center overflow-hidden">
       {/* Fondo con gradiente suave y panel de cuadros */}
-      {/* <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.9)_2px,transparent_2px),linear-gradient(90deg,rgba(255,255,255,0.9)_2px,transparent_2px)] bg-[size:20px_20px] [background-position:center]" /> */}
+      <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.5)_2px,transparent_2px),linear-gradient(90deg,rgba(255,255,255,0.5)_2px,transparent_2px)] bg-[size:20px_20px] [background-position:center]" />
+
       <video
         className="absolute inset-0 z-0 object-cover w-full h-full opacity-25"
         src="/bg3.mp4"
@@ -31,30 +32,28 @@ const Hero = () => {
                 className="object-center"
               />
             </div>
-            <p className="text-2xl text-gray-700 mb-6 leading-snug text-left mt-8">
-              La unica plataforma <br/>
-              avanzada para proveedores <br/>
-              del estado ecuatoriano
-            </p>
-            <div className="flex gap-4">
-              <Link
-                href="http://sercopia.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-transparent text-black px-6 py-3 rounded-lg hover:bg-gray-50 transition-all duration-300 font-semibold text-lg border border-orange-500 hover:shadow-lg hover:shadow-orange-200"
-              >
-                Ingresar
-              </Link>
-              <Link
-                href="https://wa.me/5930987963164"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-transparent text-black px-6 py-3 rounded-lg hover:bg-gray-50 transition-all duration-300 font-semibold text-lg border border-orange-500 hover:shadow-lg hover:shadow-orange-200"
-              >
-                Agendar Una Demo
-              </Link>
+            <div className="flex flex-col items-start gap-4 mt-8">
+              <p className="text-2xl text-orange-500 leading-snug text-left font-bold">
+                CADA MINUTO QUE PIERDES BUSCANDO, ES DINERO QUE NO ESTÁS GANANDO
+              </p>
+              <p className="text-sm text-gray-950">
+                Los proveedores que usan SERCOPIA están capturando contratos públicos por miles de dólares mientras tú sigues revisando documentos manualmente.
+                Automatiza, gana tiempo y multiplica tus ingresos desde hoy.
+              </p>
             </div>
+            <div>
+  <a
+    href="https://app.sercopia.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-transparent text-black px-6 py-3 rounded-lg hover:bg-orange-500 hover:text-white transition-all duration-300 font-semibold text-lg border-2 border-orange-500 hover:shadow-lg hover:shadow-orange-200 transform hover:scale-105 active:scale-95"
+  >
+    Ingresar
+  </a>
+</div>
           </div>
+          
+
           {/* Logo del lado derecho */}
           <div className="w-full md:w-1/2 flex justify-end items-center">
             <div className="relative w-[600px] h-[600px] -ml-32">

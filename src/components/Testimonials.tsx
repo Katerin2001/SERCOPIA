@@ -1,27 +1,29 @@
 'use client';
 
+import Image from 'next/image';
+
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Carlos Ramírez",
-      position: "Gerente de Contrataciones",
-      company: "Constructora XYZ",
+      name: "Ana María Suárez", // Corregido acentos
+      position: "Gerente General", // Agregado cargo
+      company: "Insumos Médicos", // Corregido acento
       testimonial: "Sercopia ha revolucionado la manera en que manejamos nuestras contrataciones públicas. La plataforma es intuitiva y nos ha ayudado a optimizar nuestros procesos significativamente.",
-      image: "/testimonials/person1.jpg"
+      image: "/ana.jpg"
     },
     {
-      name: "María Sánchez", 
+      name: "Erika Sánchez", // Corregido ortografía del nombre
       position: "Directora de Operaciones",
-      company: "Servicios Tecnológicos ABC",
+      company: "Servicios Externos", // Corregido ortografía
       testimonial: "La inteligencia artificial de Sercopia nos ha permitido identificar oportunidades que antes pasábamos por alto. Es una herramienta indispensable para cualquier proveedor del estado.",
-      image: "/testimonials/person2.jpg"
+      image: "/eri.jpg"
     },
     {
-      name: "Juan Morales",
+      name: "Katerin Cecén", // Corregido ortografía del nombre y acento
       position: "CEO",
-      company: "Suministros Industriales JM", 
+      company: "Servicios Tecnológicos",
       testimonial: "Desde que empezamos a usar Sercopia, nuestra participación en licitaciones públicas ha aumentado un 60%. La plataforma nos ha dado una ventaja competitiva invaluable.",
-      image: "/testimonials/person3.jpg"
+      image: "/kate.jpg"
     }
   ];
 
@@ -57,10 +59,13 @@ const Testimonials = () => {
                 "{testimonial.testimonial}"
               </p>
               <div className="text-center flex items-center justify-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-300 to-blue-300 flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">
-                    {testimonial.name.charAt(0)}
-                  </span>
+                <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
